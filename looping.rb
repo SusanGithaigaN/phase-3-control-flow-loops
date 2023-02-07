@@ -35,5 +35,9 @@ def fizzbuzz_printer
 end
 
 def reverse_string(str)
-  # str = ""
-end
+  reversed_str = ""
+  (str.length - 1).downto(0) do |i|
+  reversed_str += str[i]
+  end
+  return reversed_str
+  end
